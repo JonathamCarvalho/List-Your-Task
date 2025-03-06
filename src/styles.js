@@ -19,6 +19,12 @@
             padding: 0;
             margin-top: 60px;
         }
+
+        @media screen and (max-width:565px) {
+            width: 50%;
+            height: auto;
+                    
+        }
     `
 
     export const Input = styled.input`
@@ -31,6 +37,11 @@
         font-size: 15px;
         font-weight: 400;
         color: #000000;
+        @media screen and (max-width:565px) {
+            width: 90%;
+            height: auto;
+                    
+        }
     `
 
     export const Button = styled.button`
@@ -49,6 +60,13 @@
         }
         &:active{
             opacity: .6;
+        }
+        @media screen and (max-width:565px) {
+            height: 30px;
+            width: 89px;
+            display: block;
+            margin: 12px auto;
+            font-size: 17px;
         }
     `
 
@@ -69,7 +87,14 @@
 
         li {
             list-style: none;
+            
         }
+        @media screen and (max-width:565px) {
+            height: auto;
+            width: 89%;
+        }
+
+        
     `
 
     export const Trash = styled(FcEmptyTrash)`
